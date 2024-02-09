@@ -5,6 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
+         
+        /*Navbar*/
+        ul{
+                list-style: none;
+                padding:0;
+                margin: 0 0 0 150px;
+            }
+
+            li{
+                float: right;
+            }
+
+            nav a{
+                
+                display: block;
+                padding: 20px 15px;
+                overflow: hidden;
+                width: 100px;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+           
+
+            .logo  img{
+                position:absolute;
+                margin-top: 0px;
+                margin-left: 10px;
+            }
+
+            /*Heading 1*/
+            .Heading1{
+            text-align: center;
+              margin-bottom: 5%;
+              padding-top: 5%;
+            }
+
         figure {
           display: inline-block;
           margin: 0;
@@ -59,16 +97,81 @@
       font-size: large;
     }
 
+    /*footer*/
+    .footer{
+                display: flex;
+                padding: 10px 5px;
+                width: 100%;
+                
+            } 
+
+            .footer-ContactUs{
+                margin-left: 30%;
+                margin-right: 60px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .address{
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+        
+
+            .physicaladdress1{
+    
+               margin-left: 23px;
+            }
+
+            .openning-hours{
+                padding-right: 30px;
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+            .copywrite{
+                text-align: center;
+               margin-bottom: -5%;
+               margin-top: -2%;
+            }
+
+
       </style>
       
 </head>
 <body>
-<header align="center">
-    <h1>Let'sGetBraided</h1>
-    <p align="center"><i>Life is not perfect, but your braids can be<br></i></p>
-</header>
+  <section >
+            
+    <header>
+            <div class="logo">
+                <a href="#">
+                    <img src="./pictures/Grey Magical Boho Moons & Spoons Logo (1).png" width="150" height="40" alt="">
+                </a>
+             </div>
+                
+             <nav class="navbar" role="navigation" aria-label="main menu">
+              <ul class="navbar">
+                  <li><a href="contactus.html">Contact Us</a></li>
+                  <li><a href="billing.html">Bookings</a></li>
+                  <li><a class="active" href="services.html">Services</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="index.html">Home</a></li>
+              </ul>
+          </nav>
+
+    </header>
+    </section>
 
     <section class="vid-section">
+      
+      <div class="Heading1">
+                  <h1>Let'sGetBraided</h1>
+                  <p ><i>Life is not perfect, but your braids can be<br></i></p>
+              </div>
+
         <div class="video-container">
             <video autoplay loop muted controls>
                 <source src="pictures\first vid.mp4" type="video/mp4">
@@ -380,6 +483,59 @@
     </figure>
   
   </section>
+
+  <footer class="footer">
+    <div class="footer-ContactUs">
+
+        <!-- social media header-->
+        <h3 class="contactUs-footer"> Follow Us</h3>
+
+        
+         <!--social media links-->
+        <a href="mailto:letsgetbraided07@gmail.com">
+          <img src="./pictures/icons8-email-64.png" width="30PX" height="" alt="">
+        </a>
+
+        <a href="https://www.instagram.com/_letsgetbraided?igsh=N2l6dGdrcXo4bG53&utm_source=qr">
+            <img src="./pictures/icons8-instagram-94.png" width="30PX" height="" alt="">
+        </a>
+
+        <a href="https://www.tiktok.com/@letsgetbraided?_t=8jjUwfVaFZW&_r=1">
+          <img src="./pictures/icons8-tik-tok-48.png" width="30PX" height="" alt="">
+        </a>
+    </div>
+
+  <!--Address-->
+    <div class="address">
+        <h3 class="Home-Address"> Physical Address</h3>
+            <p class="physicaladdress"> <img src="./pictures/icons8-home-24.png" width="20px" height="" alt=""> 97 Durham Avenue</p>
+            <p class="physicaladdress1" >Salt River</p>
+            <p class="physicaladdress1">Cape Town,</p>
+            <p  class="physicaladdress1">4058</p>
+    
+    </div>
+
+    <!--Openning hours-->
+    <div class="openning-hours">
+
+    <h3 class="openning-hours-H"> Openning Hours</h3> 
+
+        <p> Mon - Fri 8:00am - 18:00pm </p>
+        <p> Saturday  8:00am - 17:00pm </p>
+        <p> Sundays closed</p>
+        <p> Public holidays closed</p>
+    </div>
+
+   
+
+</footer> 
+
+<!--Copy write-->
+<section class="copywrite">
+
+        <p> Def Girls &#169;</p>
+
+    </section>
     
 </body>
 </html>
