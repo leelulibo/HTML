@@ -60,20 +60,41 @@
             a{
                 text-decoration: none;
             }
+            
+
+            .footer{
+                display: flex;
+                padding: 10px 5%;
+                width: 100%;
+                
+            } 
+
+            .footer-ContactUs{
+                margin-left: 20px;
+            }
+
+            .address{
+                margin-left: 20px;
+            }
+
+        
+
+            .physicaladdress1{
+    
+               margin-left: 23px;
+            }
+
             .openning-hours{
                 padding-right: 30px;
+                margin-left: 20px;
             }
 
             .copywrite{
                 text-align: center;
-               
+               margin-bottom: -5%;
+               margin-top: -2%;
             }
 
-            .footer{
-                display: flex;
-                padding: 100px 15%;
-                width: 100%;
-            }
 
         </style>
     </head>
@@ -167,16 +188,16 @@
             </div>
 
           
-            <div>
+            <div class="address">
                 <h3 class="Home-Address"> Physical Address</h3>
 
-                <img src="./pictures/icons8-home-24.png" width="20px" height="" alt="">
-
-                <p class="physical address">97 Durham Avenue</p>
-                <p>Salt River</p>
-                <p>Cape Town,</p>
-                <p>4058</p>
                 
+                
+                    <p class="physicaladdress"> <img src="./pictures/icons8-home-24.png" width="20px" height="" alt=""> 97 Durham Avenue</p>
+                    <p class="physicaladdress1" >Salt River</p>
+                    <p class="physicaladdress1">Cape Town,</p>
+                    <p  class="physicaladdress1">4058</p>
+            
             </div>
 
             <div class="openning-hours">
@@ -192,11 +213,11 @@
            
 
         </footer> 
-        <div class="copywrite">
+        <section class="copywrite">
 
                 <p> Def Girls &#169;</p>
 
-            </div>
+            </section>
 
     </body>
 
