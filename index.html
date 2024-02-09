@@ -43,24 +43,62 @@
                 padding-top: 60px;
             }
             
-            aside{
-                float: right;
-              
-             
-            }
-
+            /*About*/
             .Aboutus-heading{
                 text-align: center;
                 padding-top: 15px;
             }
+            
+            .aboutus-image{
+                padding-left:40px ;
+                margin-top: 2%;
+            }
+            
+            aside{
+                float: right;
+                width: 75%;
+                margin-top: -20%;
+               text-align: center;
+            }
 
+            .span{
+                color: rgb(255, 178, 191);
+                font-family: italic;
+                font-weight: bold;
+            }
+
+            .aboutlink{
+                color: rgb(255, 178, 191);
+                
+            }
+
+            figcaption{
+                padding-left: 9%;
+            }
+            /*Service*/
             .services-heading{
                 text-align: center;
                 padding-top: 10px;
                 
             }
+
+            .d-services{
+                text-align: center;
+            }
+
+            .service-Images{
+               padding-left: 20%;
+                
+            }
+
+            .image-Services{
+                padding-left: 20px;
+            }
             
-           
+           .contactup-P{
+            padding-top: 1%;
+            text-align: center;
+           }
             
             /*footer*/
             .footer{
@@ -139,33 +177,54 @@
 
         </section>
 
+        <!--Link to the about us page-->
         <section class="Home-aboutUs">
 
-            <h1 class="Aboutus-heading"><i> About Us</i></h1>
-            <img src="./pictures/Siya.jpeg" alt="" width="300" height="360">
+            <h1 class="Aboutus-heading"> About Us</h1>
+
+            <figure>
+            <img class="aboutus-image" src="./pictures/Siya.jpeg" alt="" width="300" height="360">
+            <figcaption> <em><b>The Founder</b></em></figcaption>
+            </figure>
 
             <div class="Aboutus-p">
 
                 <aside>
-                    <p> .........</p>
+                    <p> ...where braiding hair is our art and passion. With a combined experience of 9 years, our talented team of hairstylists specializes in crafting intricate and beautiful braided hairstyles tailored to your unique personality and preferences. At <span class="span"><i>Let'sGetBraided</i></span>, we believe that your hair is your ultimate accessory, and we're here to help you make a statement with it. From classic styles to trendy twists, we offer a diverse range of braiding techniques to suit every taste and occasion.
+                        <a class="aboutlink" href="aboutus.html"><b><em>Read More</em></b></a>
+                    </p>
                 </aside>
             </div>
 
         </section>
 
+        <!-- Link to service page-->
         <section class="Home-service" >
 
-            <h1 class="services-heading"><i> WHAT WE OFFER</i></h1>
+            <h1 class="services-heading"> What We Offer</h1>
+            <p class="d-services"><i>Life is not perfect, but your braids can be</i></p>
 
-            <img src="" width="250" height="300" alt="">
-            <img src=""  width="250" height="300" alt="">
-            <img src=""  width="250" height="300" alt="">
-
+            <div class="service-Images">
+            <a href="services.html">
+                <img class="image-Services" src="./pictures/curled boho sm.jpeg" width="300" height="350" alt="">
+            </a>
+            <a href="services.html">
+                <img class="image-Services" src="./pictures/peekaboo 39.jpeg"  width="300" height="350" alt="">
+            </a>
+            <a href="services.html">
+                <img class="image-Services" src="./pictures/small backview.jpeg"  width="300" height="350" alt="">
+            </a>
+            </div>
         </section>
 
+            <!--Link to contact us page -->
         <section class="contactUs">
 
-            <p>Get in Touch</p>
+            <p class="contactup-P"><em>Feel free to contact Us</em> 
+                <a href="contactus.html">
+                    <button> Contact Us</button>
+                </a>
+            </p>
 
         </section>
 
@@ -198,7 +257,7 @@
                     <p class="physicaladdress"> <img src="./pictures/icons8-home-24.png" width="20px" height="" alt=""> 97 Durham Avenue</p>
                     <p class="physicaladdress1" >Salt River</p>
                     <p class="physicaladdress1">Cape Town,</p>
-                    <p class="physicaladdress1">4058</p>
+                    <p class="physicaladdress1">7925</p>
             
             </div>
 
