@@ -31,7 +31,7 @@
 
            
 
-            .logo  img{
+            .logo{
                 position:absolute;
                 margin-top: 0px;
                 margin-left: 10px;
@@ -42,7 +42,7 @@
             }
 
              /*footer*/
-             .footer{
+             .main-footer{
                 display: flex;
                 padding: 10px 5px;
                 width: 100%;
@@ -86,22 +86,19 @@
      <!--Navbar-->
      <section >
         <header>
-        
-            <div class="logo">
-                <a href="#">
-                    <img src="./pictures/Grey Magical Boho Moons & Spoons Logo (1).png" width="150" height="40" alt="">
-                </a>
-             </div>
-                
-                <nav class="navbar" role="navigation" aria-label="main menu">
-                    <ul class="navbar">
-                        <li><a href="contactus.html">Contact Us</a></li>
-                        <li><a class="active" href="billing.html">Bookings</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="aboutus.html">About Us</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </nav>
+    
+            <nav class="navbar" role="navigation" aria-label="main menu">
+                <!--logo-->
+                <img class="logo" src="./pictures/Grey Magical Boho Moons & Spoons Logo (1).png" width="150" height="40" alt="">
+
+                <ul class="navbar">
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a class="active" href="billing.html">Bookings</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
            
         </header>
     </section>
@@ -158,7 +155,8 @@
     </div>
 
      <!--Footer-->
-     <footer class="footer">
+     <footer >
+        <div class="main-footer">
         <div class="footer-ContactUs">
 
             <!-- social media header-->
@@ -200,6 +198,7 @@
             <p> Sundays closed</p>
             <p> Public holidays closed</p>
         </div>
+    </div>
 
        <!--Copy write-->
     <div class="copywrite">
