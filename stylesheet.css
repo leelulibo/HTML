@@ -1,0 +1,149 @@
+/*index page*/
+
+/*Navbar*/
+ul{
+    list-style: none;
+    padding:0;
+    margin: 0 0 0 150px;
+}
+
+li{
+    float: right;
+}
+
+nav a{
+    
+    display: block;
+    padding: 20px 15px;
+    overflow: hidden;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+.logo{
+    position:absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+/*Wlcome image*/
+
+.Welcome-image{
+
+    padding-top: 60px;
+}
+
+/*About*/
+.Aboutus-heading{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.aboutus-image{
+    padding-left:10px ;
+    margin-top: 2%;
+}
+
+.side-summary{
+    float: right;
+    width: 75%;
+    margin-top: -20%;
+   text-align: center;
+}
+
+.span{
+    color: rgb(243, 144, 160);
+    font-family: italic;
+    font-weight: bold;
+}
+
+.aboutlink{
+    color: rgb(245, 138, 156);
+    
+}
+
+figcaption{
+    padding-left: 9rem;
+}
+/*Service*/
+.services-heading{
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+.d-services{
+    text-align: center;
+}
+
+.service-Images{
+   padding-left: 22rem;
+    
+}
+
+.image-Services{
+    padding-left: 1rem;
+}
+
+/*Contacy Us Link*/
+
+.contactup-P{
+padding-top: 0.5rem;
+text-align: center;
+}
+
+.contactUs-b{
+    background-color: rgb(245, 138, 156);
+    border: none;
+    border-radius: 3rem;
+}
+
+.contactUs-b:hover{
+    color: rgb(253, 253, 253);
+}
+
+
+/*footer*/
+.main-footer{
+    display: flex;
+    padding: 10px 5px;
+    width: 100%;
+    
+} 
+
+.footer-ContactUs{
+    margin-left: 30%;
+    margin-right: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+.address{
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+
+
+.physicaladdress1{
+
+   margin-left: 23px;
+}
+
+.openning-hours{
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.copywrite{
+    text-align: center;
+   margin-bottom: -5%;
+   margin-top: -2%;
+}
+
