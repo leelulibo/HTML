@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
     
     <style>
          
@@ -60,10 +61,16 @@
             padding: 0 10px;
             box-sizing: border-box;
         }
-        .heading{
+        .heading1{
             text-align: center;
            margin-top: 40%;
-           padding: 0 10px;
+           padding: 70px;
+           border: 1px solid #4CAF50;
+           background-color: lightblue;
+           padding-top: 50px;
+           padding-right: 30px;
+           padding-bottom: 50px;
+           padding-left: 80px;
         }
         .heading2{
             text-align: center;
@@ -89,6 +96,9 @@
       padding: 0 10px;
       box-sizing: border-box;
     }
+    img:hover {
+      opacity: 0.5;
+    }
 
     .image-with-description p {
       margin: 0; 
@@ -96,6 +106,14 @@
       margin-top: 10%;
       font-size: large;
     }
+    .w3-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
 
     /*footer*/
     .main-footer{
@@ -166,7 +184,7 @@
       
       <div class="Heading1">
                   <h1>Let'sGetBraided</h1>
-                  <p ><i>Life is not perfect, but your braids can be<br></i></p>
+                  <p >Life is not perfect, but your <span class="w3-tag">BRAIDS</span> can be<br></p>
               </div>
 
         <div class="video-container">
@@ -345,7 +363,7 @@
           </figure>
     </section>
     
-  <section>
+  <section class="clientcam">
     <div class="heading2">
       <h1 >Our Lovely Client's CAM</h1>
      </div>
@@ -434,7 +452,7 @@
   
 
   
-  <section>
+  <section class="hair-extensions">
 
     <div class="heading2">
       <h1>Hair Extensions and Accessories</h1>
@@ -459,7 +477,7 @@
     </figure>
     
   </section>
-  <section>
+  <section class="process">
     <div class="heading2">
       <h1>Trust the Process</h1>
     </div>
