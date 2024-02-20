@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HTML\stylesheet.css">
     <title>Book a Visit</title>
 </head>
 <body>
@@ -39,6 +40,11 @@
 
             h1{
                 padding-top: 5%;
+                background-color: lightblue;
+                font-family:Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+
+
             }
 
              /*footer*/
@@ -80,6 +86,17 @@
                margin-bottom: -5%;
                margin-top: -2%;
             }
+            .Heading1{
+            text-align: center;
+           margin-top: 0%;
+           padding: 10px;
+           border: 0px solid #4CAF50;
+           background-color: lightblue;
+           padding-top: 0px;
+           padding-right: 30px;
+           padding-bottom: 0px;
+           padding-left: 10px;
+        }
 
     </style>
 
@@ -99,13 +116,21 @@
                     <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
+            <div class="Heading1">
+                <h1>Let'sGetBraided</h1>
+                <p >Life is not perfect, but your <span class="w3-tag">BRAIDS</span> can be<br></p>
+                <strong>
+                <h1>
+                    Book A Slot
+                </h1>
+            </strong>
+            </div>
            
         </header>
     </section>
-
+   
     <div>
-        <h1>Book a Slot</h1>
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" class="edit-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
