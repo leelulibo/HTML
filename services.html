@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
     
-    <style>
+  <style>
+         
+        /*Navbar*/
+        ul{
+                list-style: none;
+                padding:0;
+                margin: 0 0 0 150px;
+            }
+
+            li{
+                float: right;
+            }
+
+            nav a{
+                
+                display: block;
+                padding: 20px 15px;
+                overflow: hidden;
+                width: 100px;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+           
+
+            .logo {
+                position:absolute;
+                margin-top: 0px;
+                margin-left: 10px;
+            }
+
+            /*Heading 1*/
+            .Heading1{
+            text-align: center;
+              margin-bottom: 5%;
+              padding-top: 5%;
+            }
+
         figure {
           display: inline-block;
           margin: 0;
-          padding: 20px;
+          padding: 25.5px;
         }
         figcaption {
           text-align: center;
@@ -14,16 +55,25 @@
         }
         
         .video-container video {
-            width: 20%;
-            display: block;
+            width: 30%;
+            justify-content: center;
             float: left;
+            display: block;
             padding: 0 10px;
             box-sizing: border-box;
+            height: 400px;
+           
         }
-        .heading{
+        .Heading1{
             text-align: center;
-           margin-top: 40%;
-           padding: 0 10px;
+           margin-top: 0%;
+           padding: 10px;
+           border: 1px solid #ffffff;
+           background-color: #e6dcd3;
+           padding-top: 100px;
+           padding-right: 100px;
+           padding-bottom: 100px;
+           padding-left: 10px;
         }
         .heading2{
             text-align: center;
@@ -49,6 +99,9 @@
       padding: 0 10px;
       box-sizing: border-box;
     }
+    img:hover {
+      opacity: 0.5;
+    }
 
     .image-with-description p {
       margin: 0; 
@@ -56,32 +109,89 @@
       margin-top: 10%;
       font-size: large;
     }
+    
 
-      </style>
+    /*footer*/
+    .main-footer{
+                display: flex;
+                padding: 10px 5px;
+                width: 100%;
+                background-color: #e6dcd3;
+                background-size: cover;
+                
+            } 
+
+            .footer-ContactUs{
+                margin-left: 30%;
+                margin-right: 60px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .address{
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+        
+
+            .physicaladdress1{
+    
+               margin-left: 23px;
+            }
+
+            .openning-hours{
+                padding-right: 30px;
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+            .copywrite{
+                text-align: center;
+               margin-bottom: -5%;
+               margin-top: -2%;
+            }
+
+
+  </style>
       
 </head>
 <body>
-  <header align="center">
-    <h1>Let'sGetBraided</h1>
-    <p align="center"><i>Life is not perfect, but your braids can be<br></i></p>
-</header>
+<section >
+            
+    <header>
+      <!--navbar-->
+             <nav class="navbar" role="navigation" aria-label="main menu">
+              <!--logo-->
+              <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
+              <ul class="navbar">
+                  <li><a href="contactus.html">Contact Us</a></li>
+                  <li><a href="billing.html">Bookings</a></li>
+                  <li><a class="active" href="services.html">Services</a></li>
+                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="index.html">Home</a></li>
+              </ul>
+          </nav>
 
-    <section class="vid-section">
-        <div class="video-container">
-            <video autoplay loop muted controls>
-                <source src="pictures\small vid.mp4" type="video/mp4">
-            </video>
-        </div>
+    </header>
+</section>
+
+  <section class="vid-section">
+      
+      <div class="Heading1">
+                  <h1>Let'sGetBraided</h1>
+                  <p >Life is not perfect, but your <span class="w3-tag">BRAIDS</span> can be<br></p>
+              </div>
+
+        
         <div class="video-container">
             <video autoplay loop muted controls>
                 <source src="pictures\smedium vid.mp4" type="video/mp4">            
             </video>
         </div>
-        <div class="video-container">
-            <video autoplay loop muted controls>
-                <source src="pictures\ali vid.mp4" type="video/mp4">            
-            </video>
-        </div>
+        
         <div class="video-container">
             <video autoplay loop muted controls>
                 <source src="pictures\peekaboo vid.mp4" type="video/mp4">            
@@ -92,16 +202,16 @@
                 <source src="pictures\boho vid.mp4" type="video/mp4">            
             </video>
         </div>
-    </div>
-    </section>
-    <br><br><div class="heading">
+    </div> <br><br>
+  </section>
+
+
+  <section class="heading">
       <h1 >Our Services</h1><br>
-  </div>
- <br> <!-- Creating space between sections -->
+  </section>
+  
         
-    <section class="pictures-section">
-        
-        
+  <section class="pictures-section">       
         <figure>
           <a href="billing.html">
             <img src="pictures\small backview.jpeg" alt="Small Knotless braids" style="width:250px;height:300px;">
@@ -119,7 +229,7 @@
           <figure>
             <a href="billing.html">
             <img src="pictures\smedium boho.jpeg" Alt="S/Medium Ombre Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>S/Medium bum length  <br> <i>R420</i></figcaption>
+            <figcaption>S/Medium boho bum length  <br> <i>R420</i></figcaption>
             </a>
           </figure>
     
@@ -140,7 +250,7 @@
           <figure>
             <a href="billing.html">
             <img src="pictures\french braids n.jpeg" Alt="French Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small Peekabo back length  <br> <i>R470</i></figcaption>
+            <figcaption>SM French bum length  <br> <i>R470</i></figcaption>
             </a>
           </figure>
           
@@ -181,8 +291,8 @@
 
           <figure>
             <a href="billing.html">
-            <img src="pictures\small backview.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Large bum length  <br> <i>R370</i></figcaption>
+            <img src="pictures\small mix.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
+            <figcaption>Small bum length  <br> <i>R470</i></figcaption>
             </a>
           </figure>
 
@@ -241,9 +351,10 @@
             <figcaption>Large bum length   <br><i>R370</i> </figcaption>
             </a>
           </figure>
-    </section>
+  </section>
+        
     
-  <section>
+  <section class="clientcam">
     <div class="heading2">
       <h1 >Our Lovely Client's CAM</h1>
      </div>
@@ -327,16 +438,12 @@
       <img src="pictures\cam 2nd.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
       <figcaption>Client in Small peekaboo braids</figcaption>
     </figure> 
-    <figure>
-      <img src="pictures\cam 3rd.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM thigh length</figcaption>
-    </figure> 
   </section>
 
   
 
   
-  <section>
+  <section class="hair-extensions">
 
     <div class="heading2">
       <h1>Hair Extensions and Accessories</h1>
@@ -361,7 +468,7 @@
     </figure>
     
   </section>
-  <section>
+  <section class="process">
     <div class="heading2">
       <h1>Trust the Process</h1>
     </div>
@@ -380,7 +487,63 @@
     <figure>
       <img src="pictures\using 6.jpeg" alt="" style="width:250px;height:300px;">
     </figure>
+  
   </section>
+
+    <!--Footer-->
+    <footer >
+      <div class="main-footer">
+      <div class="footer-ContactUs">
+
+          <!-- social media header-->
+          <h3 class="contactUs-footer"> Follow Us</h3>
+
+          
+          <!--social media links-->
+          <a href="mailto:letsgetbraided07@gmail.com">
+              <img src="./pictures/icons8-email-64.png" width="30PX" height="" alt="">
+          </a>
+
+          <a href="https://www.instagram.com/_letsgetbraided?igsh=N2l6dGdrcXo4bG53&utm_source=qr">
+              <img src="./pictures/icons8-instagram-94.png" width="30PX" height="" alt="">
+          </a>
+
+          <a href="https://www.tiktok.com/@letsgetbraided?_t=8jjUwfVaFZW&_r=1">
+              <img src="./pictures/icons8-tik-tok-48.png" width="30PX" height="" alt="">
+          </a>
+          
+      </div>
+
+    <!--Address-->
+      <div class="address">
+          <h3 class="Home-Address"> Physical Address</h3>
+              <p class="physicaladdress"> <img src="./pictures/icons8-home-24.png" width="20px" height="" alt=""> 97 Durham Avenue</p>
+              <p class="physicaladdress1" >Salt River</p>
+              <p class="physicaladdress1">Cape Town,</p>
+              <p class="physicaladdress1">7925</p>
+      
+      </div>
+
+      <!--Openning hours-->
+      <div class="openning-hours">
+
+      <h3 class="openning-hours-H"> Openning Hours</h3> 
+
+          <p> Mon - Fri 8:00am - 18:00pm </p>
+          <p> Saturday  8:00am - 17:00pm </p>
+          <p> Sundays closed</p>
+          <p> Public holidays closed</p>
+      </div>
+  </div>
+
+     <!--Copy write-->
+  <div class="copywrite">
+
+      <p> Def Girls &#169;</p>
+
+  </div>
+
+  </footer> 
     
 </body>
 </html>

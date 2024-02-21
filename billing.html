@@ -3,12 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Book a Visit</title>
 </head>
-<body>
+<body class="body" >
+    
+
+    <style>
+        /*Navbar*/
+        ul{
+                list-style: none;
+                padding:0;
+                margin: 0 0 0 150px;
+            }
+
+            li{
+                float: right;
+            }
+
+            nav a{
+                
+                display: block;
+                padding: 20px 15px;
+                overflow: hidden;
+                width: 100px;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+           
+
+            .logo{
+                position:absolute;
+                margin-top: 0px;
+                margin-left: -9px;
+            }
+
+            
+
+             /*footer*/
+             .main-footer{
+                display: flex;
+                padding: 10px 5px;
+                width: 100%;
+                background-color:  #D2B48C;         
+            } 
+
+            .footer-ContactUs{
+                margin-left: 30%;
+                margin-right: 60px;
+            }
+
+            a{
+                text-decoration: none;
+            }
+            .address{
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+        
+
+            .physicaladdress1{
+    
+               margin-left: 23px;
+            }
+
+            .openning-hours{
+                padding-right: 30px;
+                margin-left: 20px;
+                margin-right: 60px;
+            }
+
+            .copywrite{
+                text-align: center;
+               margin-bottom: -5%;
+               margin-top: -2%;
+            }
+            .Heading1{
+            text-align: center;
+           margin-top: 0%;
+           padding: 10px;
+           border: 1px solid #ffffff;
+           background-color: #e6dcd3;
+           padding-top: 100px;
+           padding-right: 100px;
+           padding-bottom: 100px;
+           padding-left: 10px;
+        }
+
+            
+    .input-box {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-color: none;
+        border-color:  #D2B48C;
+        font-style: oblique;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        background-color:  #F5DEB3;
+        border-radius: .8rem;
+        margin: .7rem 0;
+        color:  black;
+    }
+
+    .input-box textarea {
+        resize: none;
+    }
+
+    .input-box .btn {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    /* .body{
+        background-color:  #D2B48C;
+    } */
+
+    .message{
+        text-decoration: solid;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .braid-type, .ubude, .ubungakanani, .ubunjani{
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-color:  #D2B48C;
+        border-color:  #D2B48C;
+        font-style: oblique;
+
+    }
+    .braid-type,.hair-length, .hair-size, .ubude, .ubungakanani, .ubunjani{
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        background-color:  #F5DEB3;
+        border-radius: .8rem;
+        margin: .7rem 0;
+        color: black;
+    }
+    .w3-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+    .body {
+    background-image: url('./pictures/W\ Magazine\ Korea\ 2017.jfif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+}
+
+
+    </style>
+
+     <!--Navbar-->
+     <section >
+        <header>
+    
+            <nav class="navbar" role="navigation" aria-label="main menu">
+                <!--logo-->
+                <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
+                <ul class="navbar">
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="billing.html">Bookings</a></li>
+                    <li><a class="active" href="services.html">Services</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="Heading1">
+                <h1>Bookings</h1>
+                <p >Make a  <span class="w3-tag">Booking</span> with us<br></p>
+           
+        </header>
+    </section>
+   
     <div>
-        <h1>Book a Slot</h1>
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" class="input-box">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -24,8 +209,8 @@
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time"><br><br>
              
-            <label for="hair_length">Hair Length:</label>
-            <select id="hair_length" name="hair_length">
+            <label for="hair_length" class="hair-length">Hair Length:</label>
+            <select id="hair_length" name="hair_length" class="ubude">
                 <option value="back">Back length</option>
                 <option value="bum">Bum length</option>
                 <option value="waist">Waist length</option>
@@ -33,8 +218,8 @@
                 <option value="knee">Knee length</option>
             </select><br><br>
 
-            <label for="hair_size">Hair Size:</label>
-            <select id="hair_length" name="hair_size">
+            <label for="hair_size" class="hair-size">Hair Size:</label>
+            <select id="hair_length" name="hair_size" class="ubungakanani">
                 <option value="small">Small</option>
                 <option value="medium-small">Medium small</option>
                 <option value="medium">Medium</option>
@@ -42,19 +227,76 @@
                 <option value="large">Large</option>
             </select><br><br>
 
-            <label for="braid_type">Type of Braid:</label>
-            <select id="braid_type" name="braid_type">
+            <label for="braid_type" class="braid-type">Type of Braid:</label>
+            <select id="braid_type" name="braid_type" class="ubunjani">
                 <option value="knotless">Knotless braids</option>
                 <option value="boho braids">Boho braids</option>
                 <option value="peekaboo braids">Peekaboo braids</option>
                 <option value="curly ends">Curly ends</option>
             </select><br><br>
-
-            <label for="message">Any additional information</label><br>
+            
+            <label for="message" class="message">Any additional information</label><br>
             <textarea id="message" name="message" rows="4"></textarea><br><br>
 
-            <input type="submit" value="Book">
+            <input type="submit" value="Book" class="btn">
         </form>
     </div>
+
+     <!--Footer-->
+     <footer >
+        <div class="main-footer">
+        <div class="footer-ContactUs">
+
+            <!-- social media header-->
+            <h3 class="contactUs-footer"> Follow Us</h3>
+
+            
+            <!--social media links-->
+            <a href="mailto:letsgetbraided07@gmail.com">
+                <img src="./pictures/icons8-email-64.png" width="30PX" height="" alt="">
+            </a>
+
+            <a href="https://www.instagram.com/_letsgetbraided?igsh=N2l6dGdrcXo4bG53&utm_source=qr">
+                <img src="./pictures/icons8-instagram-94.png" width="30PX" height="" alt="">
+            </a>
+
+            <a href="https://www.tiktok.com/@letsgetbraided?_t=8jjUwfVaFZW&_r=1">
+                <img src="./pictures/icons8-tik-tok-48.png" width="30PX" height="" alt="">
+            </a>
+            
+        </div>
+
+      <!--Address-->
+        <div class="address">
+            <h3 class="Home-Address"> Physical Address</h3>
+                <p class="physicaladdress"> <img src="./pictures/icons8-home-24.png" width="20px" height="" alt=""> 97 Durham Avenue</p>
+                <p class="physicaladdress1" >Salt River</p>
+                <p class="physicaladdress1">Cape Town,</p>
+                <p class="physicaladdress1">7925</p>
+        
+        </div>
+
+        <!--Openning hours-->
+        <div class="openning-hours">
+
+        <h3 class="openning-hours-H"> Openning Hours</h3> 
+
+            <p> Mon - Fri 8:00am - 18:00pm </p>
+            <p> Saturday  8:00am - 17:00pm </p>
+            <p> Sundays closed</p>
+            <p> Public holidays closed</p>
+        </div>
+    </div>
+
+       <!--Copy write-->
+    <div class="copywrite">
+
+        <p> Def Girls &#169;</p>
+
+    </div>
+
+    </footer> 
+
+    
 </body>
 </html>
