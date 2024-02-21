@@ -27,13 +27,11 @@
     font-family: 'gram';
     src: url('Font/Gramling\ Regular.ttf');
 }
-body{
-    background-color: #e6dcd3 ;
-}
+
 .navbar{
     list-style: none;
     padding:0;
-    margin: 0 0 -1% 150px;
+    margin: 0 0 0 150px;
     
 }
 .blockContainer{
@@ -72,10 +70,7 @@ nav a{
 }
 
     /** {box-sizing: border-box;}*/
-    html {
-        font-size: 100%;
-        line-height: 1.5;
-    }
+    
     .top p{
         text-align: center;
         margin: 5em;
@@ -83,14 +78,7 @@ nav a{
         font-family:'Times New Roman', Times, serif;
         font-weight: lighter;
     }
-    h1{
-        text-align: center;
-        padding-top: 5%;
-        font-family: 'Custom';
-        font-size: 40pt;
-        color: #f0eae6;
-        
-    }
+   
     h2{
         text-align: center;
         font-family: 'Custom';
@@ -118,6 +106,14 @@ nav a{
 .TeamHeading h2{
     color: #bda18c;
 }
+.w3-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
 
  
 /*footer*/
@@ -125,7 +121,8 @@ nav a{
                 display: flex;
                 padding: 10px 5px;
                 width: 100%;
-                
+                background-color: #e6dcd3;
+                background-size: cover;
             } 
 
             .footer-ContactUs{
@@ -166,6 +163,17 @@ nav a{
     font-weight: 900;
 
 }
+.Heading1{
+            text-align: center;
+           margin-top: 0%;
+           padding: 11px;
+           
+           background-color: #e6dcd3;
+           padding-top: 100px;
+           padding-right: 100px;
+           padding-bottom: 100px;
+           padding-left: 10px;
+        }
 
    
     
@@ -179,24 +187,26 @@ nav a{
    
     <header>
         <!--Navbar-->
-                <nav class="navbar" role="navigation" aria-label="main menu">
-                    <!--logo-->
-                    <ul class="navbar">
-                        <li><a href="contactus.html">Contact Us</a></li>
-                        <li><a href="billing.html">Bookings</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a class="active" href="aboutus.html">About Us</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </nav>
+        <nav class="navbar" role="navigation" aria-label="main menu">
+            <!--logo-->
+            <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
+            <ul class="navbar">
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="billing.html">Bookings</a></li>
+                <li><a class="active" href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
     </header>
     </section>
 
-<blockquote>
-<div class="heading">
-  <h1>About Us</h1>  
-  <h2>Welcome to <em><u>Let'sGetBraided</u></em></h2>
-</div>
+<div>
+    <div class="Heading1">
+        <h1>About Us</h1>
+        <p >Get to <span class="w3-tag">Know Us</span><br></p>
+    </div>
+
 
 
 <section class="top">
@@ -208,7 +218,7 @@ nav a{
     preferences and vision for their hair. <em>Let'sGetBraided</em> is more than just a hairstyling salon. We are a community of creativity and empowerment, where clients
 can feel comfortable expressing themselves through their hair. Our mission is to inspire confidence and self-expression in everyone who walks through doors.</p>
 </section>
-</blockquote>
+</div>
 
 <div class="TeamHeading">
    <h2><u>Our Team</u></h2> 
