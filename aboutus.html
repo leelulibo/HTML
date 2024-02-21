@@ -2,27 +2,59 @@
 <html lang="en-US" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 
 <style>
   /*Navbar*/
-            .navbar{
-                list-style: none;
-                padding:0;
-                margin: 0 0 0 150px;
-            }
-            .w3-tag {
-             background-color: #000;
-             color: #bda18c;
-             display: inline-block;
-             padding-left: 8px;
-             padding-right: 8px;
-            text-align: center;
+@font-face {
+    font-family: 'Custom';
+    src: url('Font/riesling.ttf');
+}
+@font-face {
+    font-family: 'Elmonza';
+    src: url('Font/ELMONZA.ttf');
+}
+@font-face {
+    font-family: 'coco';
+    src: url('Font/COCO\ MiLk.otf');
+}
+@font-face {
+    font-family: 'glance';
+    src: url('Font/Glance.ttf');
+}
+@font-face {
+    font-family: 'gram';
+    src: url('Font/Gramling\ Regular.ttf');
+}
+body{
+    background-color: #e6dcd3 ;
+}
+.navbar{
+    list-style: none;
+    padding:0;
+    margin: 0 0 -1% 150px;
+    
+}
+.blockContainer{
+  background-color: #b4b4b4;
+  position: relative;
+  top: 200px;
+  height: 900px;
+  width: 600px;
+}
+/*section{
+    background-color: #b4a79e;
+}*/
+.heading{
+    width: 100%;
+    background-color: #bda18c;
+    
 }
 
-            li{
-                float: right;
-            }
+li{
+    float: right;
+}
 
             nav a{
                 
@@ -42,18 +74,6 @@
                 margin-top: 0px;
                 margin-left: -9%;
             }
-            .Heading1{
-            text-align: center;
-           margin-top: 0%;
-           padding: 10px;
-           border: 1px solid #ffffff;
-           background-color: #e6dcd3;
-           background-size: cover;
-           padding-top: 100px;
-           padding-right: 100px;
-           padding-bottom: 100px;
-           padding-left: 10px;
-        }
 
     /** {box-sizing: border-box;}*/
     html {
@@ -63,11 +83,19 @@
     .top p{
         text-align: center;
         margin: 5em;
+        font-size: 15pt;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: lighter;
     }
-   
-    
+    h1{
+        text-align: center;
+        padding-top: 5%;
+    }
     h2{
         text-align: center;
+        font-family: 'Custom';
+        font-size: 40pt;
+        color: #f0eae6;
     }
     figure {
         display: inline-block;
@@ -78,15 +106,21 @@
         text-align: center;
     }
     .bottom{
+        background-color: #bda18c;
+    justify-content: flex;
      text-align: center ;
     }
     ul{
         text-align: justify;
         color: black;
         margin-top: 5em;
-    }
+}
+.TeamHeading h2{
+    color: #bda18c;
+}
+
  
-     /*footer*/
+/*footer*/
      .main-footer{
                 display: flex;
                 padding: 10px 5px;
@@ -115,17 +149,25 @@
                margin-left: 23px;
             }
 
-            .openning-hours{
+.openning-hours{
                 padding-right: 30px;
                 margin-left: 20px;
                 margin-right: 60px;
-            }
+}
 
-            .copywrite{
-                text-align: center;
+.copywrite{
+    text-align: center;
                margin-bottom: -5%;
                margin-top: -2%;
-            }
+}
+.icon{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    font-weight: 900;
+
+}
+
    
     
 
@@ -134,13 +176,13 @@
 
 <body>
 
-  <section >
-            
+  <div class="nav">
+   
     <header>
         <!--Navbar-->
                 <nav class="navbar" role="navigation" aria-label="main menu">
                     <!--logo-->
-                    <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
+                    <img class="logo" src="./pictures/Grey Magical Boho Moons & Spoons Logo (1).png" width="150" height="40" alt="">
                     <ul class="navbar">
                         <li><a href="contactus.html">Contact Us</a></li>
                         <li><a href="billing.html">Bookings</a></li>
@@ -154,10 +196,9 @@
 
 <blockquote>
 
-    <div class="Heading1">
-        <h1>About Us</h1>
-        <p >Get to know <span class="w3-tag">Us</span> <br></p>
-    </div>
+  <h1>About Us</h1>  
+  <h2>Welcome to <em>Let'sGetBraided !</em></h2>
+
 <section class="top">
 <p>...where braiding hair is our art and passion. With a combined experience of 9 years, our talented team of hairstylists specializes in crafting intricate and beautiful braided hairstyles tailored to your unique personality and preferences. 
     At <em>Let'sGetBraided</em>, we believe that your hair is your ultimate accessory, and we're here to help you make a statement with it. From classic styles to trendy twists, we offer a diverse range of braiding techniques to suit every taste and occasion.
@@ -168,7 +209,10 @@
 can feel comfortable expressing themselves through their hair. Our mission is to inspire confidence and self-expression in everyone who walks through doors.</p>
 </section>
 </blockquote>
-   <h2>Our Team</h2> 
+
+<div class="TeamHeading">
+   <h2><u>Our Team</u></h2> 
+</div>
 <section class="bottom">
    <figure>
     <img src="pictures/marah.JPG" alt="Ammaarah Fakier" style="width:250px;height:350px;">
