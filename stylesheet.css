@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-.w3-tag {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-}
-.pictures-section.heading1.video-container video {
-    background-color: #f2f2f2; /* Add background color for clarity */
-    padding: 50px; /* Add padding for spacing */
-    margin-bottom: 20px; /* Add margin to separate from other sections */
-    margin-bottom: auto;
-=======
 /*index page*/
 
 /*Navbar*/
@@ -111,7 +96,7 @@ figcaption{
    padding-left: 22rem;
    padding-bottom: 2;
     
-}
+}     
 
 .image-Services{
     padding-left: 1rem;
@@ -123,8 +108,60 @@ figcaption{
 /*Contacy Us Link*/
 
 .contactUs{
-    
-     
+    jh  
+}
+
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6dcd3;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact-form{
+    background-color: #e6dcd3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rbba(0,0,0,0.1);
+}
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea{
+    height: 100px;
+}
+
+.form-group button{
+    background-color:#bda18c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button: hover{
+    background-color: #b4a79e;
 }
 
 hr{
@@ -185,7 +222,6 @@ a{
     text-align: center;
    margin-bottom: -5%;
    margin-top: -2%;
->>>>>>> df3b17d13c3a9a457cdf940c28b0352f42550b07
 }
 /* .edit-form{
 
