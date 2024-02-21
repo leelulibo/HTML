@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="HTML\stylesheet.css">
     <title>Book a Visit</title>
 </head>
-<body>
+<body class="body" >
+    
+
     <style>
         /*Navbar*/
         ul{
@@ -40,18 +42,21 @@
 
             h1{
                 padding-top: 5%;
-                background-color: lightblue;
+                background-color: none;
                 font-family:Arial, Helvetica, sans-serif;
                 text-decoration: underline;
-
-
-            }
+                /* background-image: url('./pictures/Neutral backgroung.jfif'); */
+                background-size: cover; /* This ensures the image covers the entire background */
+                background-position: center; /* This centers the image */
+}
 
              /*footer*/
              .main-footer{
                 display: flex;
                 padding: 10px 5px;
                 width: 100%;
+                background-color:  #D2B48C;
+                
                 
             } 
 
@@ -90,13 +95,81 @@
             text-align: center;
            margin-top: 0%;
            padding: 10px;
-           border: 0px solid #4CAF50;
-           background-color: lightblue;
+           border: 0px solid  #D2B48C;
+           background-color:  none;
            padding-top: 0px;
            padding-right: 30px;
            padding-bottom: 0px;
            padding-left: 10px;
+
         }
+
+            
+    .input-box {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-color: none;
+        border-color:  #D2B48C;
+        font-style: oblique;
+    }
+
+    .input-box input,
+    .input-box textarea {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        background-color:  #F5DEB3;
+        border-radius: .8rem;
+        margin: .7rem 0;
+        color:  black;
+    }
+
+    .input-box textarea {
+        resize: none;
+    }
+
+    .input-box .btn {
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    /* .body{
+        background-color:  #D2B48C;
+    } */
+
+    .message{
+        text-decoration: solid;
+        font-size: larger;
+        font-weight: bolder;
+    }
+    .braid-type, .ubude, .ubungakanani, .ubunjani{
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+        background-color:  #D2B48C;
+        border-color:  #D2B48C;
+        font-style: oblique;
+
+    }
+    .braid-type,.hair-length, .hair-size, .ubude, .ubungakanani, .ubunjani{
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        color: var(--bg-color);
+        background-color:  #F5DEB3;
+        border-radius: .8rem;
+        margin: .7rem 0;
+        color: black;
+    }
+    .body {
+    background-image: url('./pictures/W\ Magazine\ Korea\ 2017.jfif');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-position: center; /* This centers the image */
+}
+
 
     </style>
 
@@ -130,7 +203,7 @@
     </section>
    
     <div>
-        <form action="submit.php" method="post" class="edit-form">
+        <form action="submit.php" method="post" class="input-box">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -146,8 +219,8 @@
             <label for="time">Preferred Time:</label>
             <input type="time" id="time" name="time"><br><br>
              
-            <label for="hair_length">Hair Length:</label>
-            <select id="hair_length" name="hair_length">
+            <label for="hair_length" class="hair-length">Hair Length:</label>
+            <select id="hair_length" name="hair_length" class="ubude">
                 <option value="back">Back length</option>
                 <option value="bum">Bum length</option>
                 <option value="waist">Waist length</option>
@@ -155,8 +228,8 @@
                 <option value="knee">Knee length</option>
             </select><br><br>
 
-            <label for="hair_size">Hair Size:</label>
-            <select id="hair_length" name="hair_size">
+            <label for="hair_size" class="hair-size">Hair Size:</label>
+            <select id="hair_length" name="hair_size" class="ubungakanani">
                 <option value="small">Small</option>
                 <option value="medium-small">Medium small</option>
                 <option value="medium">Medium</option>
@@ -164,18 +237,18 @@
                 <option value="large">Large</option>
             </select><br><br>
 
-            <label for="braid_type">Type of Braid:</label>
-            <select id="braid_type" name="braid_type">
+            <label for="braid_type" class="braid-type">Type of Braid:</label>
+            <select id="braid_type" name="braid_type" class="ubunjani">
                 <option value="knotless">Knotless braids</option>
                 <option value="boho braids">Boho braids</option>
                 <option value="peekaboo braids">Peekaboo braids</option>
                 <option value="curly ends">Curly ends</option>
             </select><br><br>
-
-            <label for="message">Any additional information</label><br>
+            
+            <label for="message" class="message">Any additional information</label><br>
             <textarea id="message" name="message" rows="4"></textarea><br><br>
 
-            <input type="submit" value="Book">
+            <input type="submit" value="Book" class="btn">
         </form>
     </div>
 
@@ -234,5 +307,6 @@
 
     </footer> 
 
+    
 </body>
 </html>
