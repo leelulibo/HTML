@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheet.css">
     <style>
          /*Navbar*/
          .navbar{
                 list-style: none;
                 padding:0;
-                margin: 0 0 -1% 150px;
+                margin: 0 0 0 150px;
             }
 
             .navlist{
+                float: right;
+            }
+            ul{
+                list-style: none;
+                padding:0;
+                margin: 0 0 0 150px;
+            }
+
+            li{
                 float: right;
             }
 
@@ -27,17 +37,25 @@
                 text-align: center;
             }
 
-           
+            .Heading1{
+            text-align: center;
+           margin-top: 0%;
+           padding: 10px;
+           border: 1px solid #ffffff;
+           background-color: #e6dcd3;
+           padding-top: 100px;
+           padding-right: 100px;
+           padding-bottom: 100px;
+           padding-left: 10px;
+        }
 
             .logo {
                 position:absolute;
                 margin-top: 0px;
-                margin-left: -9.2%;
+                margin-left: -10%;
             }
 
-            h1{
-                padding-top: 5%;
-            }
+           
 
         ul {
             list-style-type: none; /* Removes bullets */
@@ -48,7 +66,8 @@
                 display: flex;
                 padding: 10px 5px;
                 width: 100%;
-                
+                background-color: #e6dcd3;
+                background-size: cover;
             } 
 
             .footer-ContactUs{
@@ -91,27 +110,25 @@
       <!--Navbar-->
       <section >
         <header>
-                <nav class="navbar" role="navigation" aria-label="main menu">
-                    <!--Logo-->
-                    <img class="logo" src="./pictures/Grey Magical Boho Moons & Spoons Logo (1).png" width="150" height="40" alt="">
-
-                    <ul class="navbar">
-                        <li class="navlist"><a class="active" href="contactus.html">Contact Us</a></li>
-                        <li class="navlist"><a href="billing.html">Bookings</a></li>
-                        <li class="navlist"><a href="services.html">Services</a></li>
-                        <li class="navlist"><a href="aboutus.html">About Us</a></li>
-                        <li class="navlist"><a href="index.html">Home</a></li>
-                    </ul>
-                </nav>
+            <nav class="navbar" role="navigation" aria-label="main menu">
+                <!--logo-->
+                <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
+                <ul class="navbar">
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="billing.html">Bookings</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class="active" href="aboutus.html">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
            
         </header>
     </section>
 
-<div class="container">
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
-
-</div>
+    <div class="Heading1">
+        <h1>Contact Us</h1>
+        <p >Get  <span class="w3-tag">In Touch</span>with us<br></p>
+    </div>
 
 <div class="contact-form">
     <form action="#" method="post">
