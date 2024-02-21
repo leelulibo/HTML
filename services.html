@@ -64,6 +64,7 @@
             height: 400px;
            
         }
+        
         .Heading1{
             text-align: center;
            margin-top: 0%;
@@ -74,6 +75,13 @@
            padding-right: 100px;
            padding-bottom: 100px;
            padding-left: 10px;
+        }
+       
+        .video{
+          align-content: center;
+          box-sizing: border-box;
+          display: flex;
+          float: left;
         }
         .heading2{
             text-align: center;
@@ -109,7 +117,11 @@
       margin-top: 10%;
       font-size: large;
     }
-    
+    .about__image img {
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
 
     /*footer*/
     .main-footer{
@@ -153,7 +165,48 @@
                margin-bottom: -5%;
                margin-top: -2%;
             }
+            div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  align-content: center;
+  position: center;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+.block-section {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.centered-picture {
+  display: inline-block;
+}
+
+.centered-picture img {
+  width: 250px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.description {
+  margin-top: 5px;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
   </style>
       
@@ -178,180 +231,56 @@
     </header>
 </section>
 
+
   <section class="vid-section">
       
       <div class="Heading1">
                   <h1>Let'sGetBraided</h1>
                   <p >Life is not perfect, but your <span class="w3-tag">BRAIDS</span> can be<br></p>
               </div>
-
-        
-        <div class="video-container">
-            <video autoplay loop muted controls>
-                <source src="pictures\smedium vid.mp4" type="video/mp4">            
-            </video>
-        </div>
-        
-        <div class="video-container">
-            <video autoplay loop muted controls>
-                <source src="pictures\peekaboo vid.mp4" type="video/mp4">            
-            </video>
-        </div>
-        <div class="video-container">
-            <video autoplay loop muted controls>
-                <source src="pictures\boho vid.mp4" type="video/mp4">            
-            </video>
-        </div>
-    </div> <br><br>
   </section>
 
-
-  <section class="heading">
-      <h1 >Our Services</h1><br>
+  <section>
+    <div class="block-section">
+      <div class="centered-picture">
+        <div class="vid">
+          <div class="heading">
+            <h1>What we offer</h1>
+          </div>
+          <div class="gallery">
+            <a target="_blank" href="pictures\smedium boho.jpeg">
+              <img src="pictures\smedium boho.jpeg" alt="Centered Picture" width="600" height="400" style="margin: 0 auto; display: block;">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+  
+          <div class="gallery">
+            <a target="_blank" href="pictures\small mix.jpeg">
+              <img src="pictures\small mix.jpeg" alt="Centered Picture" width="600" height="400" style="margin: 0 auto; display: block;">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+  
+          <div class="gallery">
+            <a target="_blank" href="pictures\small.jpeg">
+              <img src="pictures\small.jpeg" alt="Centered Picture" width="600" height="400" style="margin: 0 auto; display: block;">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+  
+          <div class="gallery">
+            <a target="_blank" href="pictures\peekaboo small.jpeg">
+              <img src="pictures\peekaboo small.jpeg" alt="Centered Picture" width="600" height="400" style="margin: 0 auto; display: block;">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   
         
-  <section class="pictures-section">       
-        <figure>
-          <a href="billing.html">
-            <img src="pictures\small backview.jpeg" alt="Small Knotless braids" style="width:250px;height:300px;">
-            <figcaption>Small bum length <br> <i>R470</i></figcaption>
-          </a>
-          </figure>
-          
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\small ombre thigh length.jpeg" Alt="Small Ombre Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small ombre thigh length  <br><i> R520</i></figcaption>
-          </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\smedium boho.jpeg" Alt="S/Medium Ombre Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>S/Medium boho bum length  <br> <i>R420</i></figcaption>
-            </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\peekaboo small.jpeg" Alt="Peekabo Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small Peekabo back length  <br><i>R400</i> </figcaption>
-            </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\blonde peekaboo.jpeg" Alt="Peekabo Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small Peekabo back length  <br><i>R400</i> </figcaption>
-            </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\french braids n.jpeg" Alt="French Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>SM French bum length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-          
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\sl bum.jpeg" Alt="ML Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>M/L bum length  <br> <i>R370</i></figcaption>
-            </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\smedium thigh l.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>S/M thigh length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-    
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\curly sm.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Curly s/m bum length <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-          
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\large.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Large bum length  <br> <i>R370</i></figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\sm.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>S/M bum length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\small mix.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small bum length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\small 4.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small bum length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\small 1.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small bum length  <br> <i>R470</i></figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\peekaboo 39.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small Peekabo back length <br><i>R400</i> </figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\sm thigh.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>S/M thigh length  <br><i>R470</i> </figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\curled boho sm.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Curled boho  <br><i>R520</i> </figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\small xlient cam 4.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Small bum kength   <br><i>R470</i> </figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\mlarge 1.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>ML waist length   <br><i>R470</i> </figcaption>
-            </a>
-          </figure>
-
-          <figure>
-            <a href="billing.html">
-            <img src="pictures\large bum.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-            <figcaption>Large bum length   <br><i>R370</i> </figcaption>
-            </a>
-          </figure>
-  </section>
+ 
         
     
   <section class="clientcam">
