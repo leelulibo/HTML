@@ -94,12 +94,13 @@
             text-align: center;
             margin-top: 0%;
             padding: 10px;
-            border: 1px solid #ffffff;
+            /* border: 1px solid #ffffff; */
             background-color:#e6dcd3;
             padding-top: 100px;
             padding-right: 100px;
             padding-bottom: 100px;
             padding-left: 10px;
+
         }
 
 
@@ -111,8 +112,9 @@
             background-color:D2B48C ;
             border-color: #D2B48C;
             font-style: oblique;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:Georgia, 'Times New Roman', Times, serif;
             font-weight: bolder;
+
         }
 
         .input-box textarea {
@@ -120,7 +122,7 @@
             padding: 1.5rem;
             font-size: 1.6rem;
             color: white;
-            background-color: #e6dcd3;
+            background-color: #F5E6CF;
             border-radius: .8rem;
             margin: .7rem 0;
             color: black;
@@ -129,30 +131,33 @@
 
         }
         .input-box input{
-            width: 20%;
+            width: 10%;
             padding: 1.5rem;
             font-size: 1.6rem;
             color: white;
-            background-color: #e6dcd3;
-            border-radius: .8rem;
+            background-color: #F5E6CF;
+            border-radius: .2rem;
             margin: .7rem 0;
             color: black;
-            min-height: fit-content;
+            max-height: 5px;
             margin-left: 0cap;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         .input-box textarea {
             resize: none;
-            width: 80%;
+            width: 40%;
         }
 
         .input-box .btn {
             margin-top: 2rem;
             cursor: pointer;
-            width: 10%;
-            font-weight: bolder;
-            text-align: right;
+            width: 15.5%;
+            /* font-weight: bolder; */
+            box-sizing: content-box;
+            padding-top: 0cap;
+            font-weight: normal;
+
         }
 
         /* .body{
@@ -169,7 +174,7 @@
         .ubude,
         .ubungakanani,
         .ubunjani {
-            max-width: 35%;
+            max-width: 15%;
             margin: 1rem auto;
             text-align: center;
             margin-bottom: 3rem;
@@ -184,7 +189,7 @@
         .ubude,
         .ubungakanani,
         .ubunjani {
-            width: 20%;
+            width: 5%;
             border-radius: .15rem;
             margin: .7rem 0;
             color: black;
@@ -201,10 +206,17 @@
         .body {
             /* background-color: #DCD9D7; */
             background-image: url(pictures/W\ Magazine\ Korea\ 2017.jfif);
-            background-size: cover;
+            background-size: 35%;
+            background-color: #e6dcd3;
             /* This ensures the image covers the entire background */
             background-position: center;
             /* This centers the image */
+            background-repeat: no-repeat;
+            /* This ensures the image is not repeated */
+            background-position: center;
+            /* This centers the image */
+        
+        
         }
     </style>
 
@@ -233,20 +245,20 @@
     <div>
         <form action="submit.php" method="post" class="input-box">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>&between;
+            <input type="text" id="name" name="name" required>
 
             <label for="surname">Surname:</label>
             <input type="text" id="surname" name="surname" required> <br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>&between;
+            <input type="email" id="email" name="email">
 
             <label for="phone">Phone:</label>
             <input type="text" id="phone" name="phone" required><br><br>
             
             <div class="date-time">
             <label for="date">Date:</label>
-            <input type="date" id="time" name="time" required>&becaus;;
+            <input type="date" id="time" name="time" >
 
             <label for="time">Time:</label>
             <input type="time" id="time" name="time" required><br><br>
@@ -259,7 +271,7 @@
                 <option value="waist">Waist length</option>
                 <option value="tigh">Tigh length</option>
                 <option value="knee">Knee length</option>
-            </select>&between;
+            </select>
 
             <label for="hair_size">Hair Size:</label>
             <select id="hair_length" name="hair_size" class="ubungakanani">
@@ -268,7 +280,7 @@
                 <option value="medium">Medium</option>
                 <option value="medium-large">Medium-large</option>
                 <option value="large">Large</option>
-            </select>&because;
+            </select>
 
             <label for="braid_type">Type of Braid:</label>
             <select id="braid_type" name="braid_type" class="ubunjani">
