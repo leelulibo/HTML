@@ -3,301 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.css">
-    
-  <style>
-         html{
-          font-size: 67.5%;
-          overflow-x: hidden;
-          scroll-behavior: smooth;
-          scroll-padding-top: 6rem;
-         }
-         html::-webkit-scrollbar{
-          width: .6rem;
-         }
-         html::-webkit-scrollbar-track{
-          background-color: var(--white);
-         }
-         html::-webkit-scrollbar-thumb{
-          background-color: var(--primary-color);
-         }
-         section{
-          padding: 5rem 7%;
-         }
-         .w3-tag {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-}
-.services{
-  background-color: var(--main-color);
-}
-.services .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
-  gap: 2rem;
-}
-.services .box-container .box{
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.services .box-container .box img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.services .box-container .box img{
-  transform: scale(1.1);
-}
-.services .box-container .box:hover .content{
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  height: 100%;
-  width: 100%;
-  background: var(--dark-bg);
-  
-}
-.services .box-container .box .content h3{
-  text-align: center;
-  font-size: 3rem;
-  color: var(--white);
-  padding-top: 40rem;
-  text-transform:capitalize ;  
-}
-.services .box-container .box:hover .content{
-  display: flex;
-}
-         
-        /*Navbar*/
-        ul{
-                list-style: none;
-                padding:0;
-                margin: 0 0 0 150px;
-            }
-
-            li{
-                float: right;
-            }
-            .body{
-              background-image: url(pictures\background.jpg);
-              background-size: cover;
-            }
-
-            nav a{
-                
-                display: block;
-                padding: 20px 15px;
-                overflow: hidden;
-                width: 100px;
-                text-decoration: none;
-                color: black;
-                text-align: center;
-                font-size: large;
-            }
-
-           
-
-            .logo {
-                position:absolute;
-                margin-top: 0px;
-               
-            }
-
-            /*Heading 1*/
-            .Heading1{
-            text-align: center;
-              margin-bottom: 5%;
-              padding-top: 5%;
-            }
-
-        figure {
-          display: inline-block;
-          margin: 0;
-          padding: 25.5px;
-        }
-        figcaption {
-          text-align: center;
-          font-style: italic;
-        }
-        
-        .video-container video {
-            width: 30%;
-            justify-content: center;
-            float: left;
-            display: block;
-            padding: 0 10px;
-            box-sizing: border-box;
-            height: 400px;
-           
-        }
-        
-        .Heading1{
-           text-align: center;
-           margin-top: 0%;
-           padding: 10px;
-           border: 1px solid #ffffff;
-           background-color: #e6dcd3;
-           padding-top: 100px;
-           padding-right: 100px;
-           padding-bottom: 100px;
-           padding-left: 10px;
-           font-size: large;
-        }
-       
-        .video{
-          align-content: center;
-          box-sizing: border-box;
-          display: flex;
-          float: left;
-        }
-       
-       
-        .image-with-description {
-      clear: both;
-      margin-bottom: 20px; 
-    }
-
-    .image-with-description img {
-      float: left; 
-      margin-right: 10px; 
-      width: 250px; 
-      height: 300px; 
-      display: block;
-      padding: 0 10px;
-      box-sizing: border-box;
-    }
-    img:hover {
-      opacity: 0.5;
-    }
-
-    .image-with-description p {
-      margin: 0; 
-      text-align: center;
-      margin-top: 10%;
-      font-size: large;
-    }
-    .about__image img {
-    max-width: 400px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-    /*footer*/
-    .main-footer{
-                display: flex;
-                padding: 10px 5px;
-                width: 100%;
-                background-color: #e6dcd3;
-                background-size: cover;
-                
-            } 
-
-            .footer-ContactUs{
-                margin-left: 30%;
-                margin-right: 60px;
-            }
-
-            a{
-                text-decoration: none;
-            }
-
-            .address{
-                margin-left: 20px;
-                margin-right: 60px;
-            }
-            .column {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  
-}
-
-/* Style the images inside the grid */
-
-
-            
-
-        
-
-            .physicaladdress1{
-    
-               margin-left: 23px;
-            }
-
-            .openning-hours{
-                padding-right: 30px;
-                margin-left: 20px;
-                margin-right: 60px;
-            }
-
-            .copywrite{
-                text-align: center;
-               margin-bottom: -3px;
-               margin-top: -1px;
-            }
-            div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-  align-content: center;
-  position: center;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-.block-section {
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.centered-picture {
-  display: inline-block;
-}
-
-.centered-picture img {
-  width: 250px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Add border radius for rounded corners */
-}
-
-.description {
-  margin-top: 5px;
-}
-
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.clientcam {
-  box-sizing: border-box;
-}
-
-.clientcam {
-  margin: 0;
-  font-family: Arial;
-}
-
-
-
-  </style>
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="prac.css">
       
 </head>
 <body>
@@ -309,10 +16,10 @@ div.desc {
               <!--logo-->
               <img class="logo" src="pictures\LetsGetB. (2).png" height="100px"  alt="">
               <ul class="navbar">
-                  <li><a href="contactus.html">Contact Us</a></li>
-                  <li><a href="billing.html">Bookings</a></li>
+                  <li><a href="intouch.html">Contact Us</a></li>
+                  <li><a href="bookings.html">Bookings</a></li>
                   <li><a class="active" href="services.html">Services</a></li>
-                  <li><a href="aboutus.html">About Us</a></li>
+                  <li><a href="us.html">About Us</a></li>
                   <li><a href="index.html">Home</a></li>
               </ul>
           </nav>
@@ -354,7 +61,7 @@ div.desc {
             <a target="_blank" href="pictures\small.jpeg">
               <img src="pictures\small.jpeg" alt="Centered Picture" width="600" height="400" style="margin: 0 auto; display: block;">
             </a>
-            <div class="desc">Small Knotless Braids in bum length</div>
+            <div class="desc">Small Knotless  in bum length</div>
           </div>
   
           <div class="gallery">
@@ -364,11 +71,7 @@ div.desc {
             <div class="desc">Peekaboo Braids in back length</div>
             
           </div>
-          <div class="btn">
-            <a href="pictures\Jewelry.png" download>
-            <button type="submit">Download PriceList</button>
-            </a>
-        </div>
+          
         </div>
       </div>
     </div> 
@@ -410,131 +113,46 @@ div.desc {
   </section>
 
   <section class="pricing" id="pricing">
-    <h1 class="heading">Offer and Pricing</h1>
+
+    <h1 class="heading">offer and Pricing</h1>
+
     <div class="box-container">
 
-      <div class="box">
-        <h3 class="title">Basic</h3>
-        <div class="price">
-          <span class="currency">R</span>
-          <span class="amount">370</span>
+        <div class="box">
+          <h3 class="title">basic</h3>
+          <div class="price">
+            <span class="currency">R</span>
+            <span class="amount">320</span>
+          </div>
+          
+          <a href="billing.html"><button>book a visit</button></a>
         </div>
-        <ul>
-          <li><i class="fas fa-check">Small Knotless</i></li>
-          <li><i class="fas fa-check">Small/Medium Knotless</i></li>
-          <li><i class="fas fa-check">Large Knotless</i></li>
-          <li><i class="fas fa-check">Boho Knotless</i></li>
-        </ul>
-        <a href="#"><button>Book a visit</button></a>
-      </div>
-
-      <div class="box">
-        <h3 class="title">Standard</h3>
-        <div class="price">
-          <span class="currency">R</span>
-          <span class="amount">470</span>
+        
+        <div class="box">
+          <h3 class="title">standard</h3>
+          <div class="price">
+            <span class="currency">R</span>
+            <span class="amount">470</span>
+          </div>
+          
+          <a href="billing.html"><button>book a visit</button></a>
         </div>
-        <ul>
-          <li><i class="fas fa-check">Small Knotless</i></li>
-          <li><i class="fas fa-check">Small/Medium Knotless</i></li>
-          <li><i class="fas fa-check">Large Knotless</i></li>
-          <li><i class="fas fa-check">Boho Knotless</i></li>
-        </ul>
-        <a href="#"><button>Book a visit</button></a>
-      </div>
-
-      <div class="box">
-        <h3 class="title">Premium</h3>
-        <div class="price">
-          <span class="currency">R</span>
-          <span class="amount">570</span>
+        
+        <div class="box">
+          <h3 class="title">premium</h3>
+          <div class="price">
+            <span class="currency">R</span>
+            <span class="amount">570</span>
+          </div>
+          
+          <a href="billing.html"><button>book a visit</button></a>
         </div>
-        <ul>
-          <li><i class="fas fa-check">Small Knotless</i></li>
-          <li><i class="fas fa-check">Small/Medium Knotless</i></li>
-          <li><i class="fas fa-check">Large Knotless</i></li>
-          <li><i class="fas fa-check">Boho Knotless</i></li>
-        </ul>
-        <a href="#"><button>Book a visit</button></a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="clientcam">
-    <div class="heading2">
-      <h1 >Select few of our clients</h1>
-     </div>
-    <figure>
-      <img src="pictures\sm client am 3.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\small client cam 1.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in Small bum length </figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\small client cam blond.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in blonde small</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\sm client cam 02.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\sm client cam 002.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\sm client cam nn.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\large client cam.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in Large bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\sm client cam.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in out SM thigh lenth</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\sm client cam2.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in SM bum length</figcaption>
-    </figure>
-    <figure>
-      <img src="pictures\french braids client cam.jpeg" Alt="SM Knotless Braids" style="width:250px;height:300px;">
-      <figcaption>Client in French bum length</figcaption>
-    </figure> 
-  </section>
-
-  
-
-  
-  <section class="hair-extensions">
-
-    <div class="heading2">
-      <h1>Hair Extensions and Accessories</h1>
+        
     </div>
     
-      
+</section>
 
-    <figure class="image-with-description">
-      <img src="pictures\hair extensions.jpeg" alt="Hair extensions" style="width:250px;height:300px;">
-      <p>All of our work was achieved using the <em>Darling One Million hairpiece</em>.
-      Unfortunately, this is the only hairpiece we use, <br>but we assure you it is the best one currently available. We pride ourselves on using only the best products to achieve the various hairstyles shown above.</p>
-    </figure>
-
-    <figure class="image-with-description" >
-      <img src="pictures\beads.jpeg" alt="Beads" style="width:250px;height:300px;">
-      <p>Our clients have the option of adding beads of their choice to their braids at an additional cost of R50.<br> The prices above already include the additional R50.</p>
-    </figure>
-
-    <figure class="image-with-description">
-      <img src="pictures\curls.jpeg" alt="Curls for boho braids" style="width:250px;height:300px;">
-      <p>For our boho braids hairstyles, we use the Accahh curls, as we found them to be the best, shiny, smooth, and long enough for our clients who like long braids.<br> Our clients also have the option to have the hairpiece curled instead, like our curled boho braids.</p>
-    </figure>
-    
-  </section>
+  
   <section class="process">
     <div class="heading2">
       <h1>Trust the Process</h1>
