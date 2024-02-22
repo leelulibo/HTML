@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('Font/riesling.ttf');
+}
 .w3-tag {
     background-color: #000;
     color: #fff;
@@ -90,6 +94,10 @@ li:hover{
 
 figcaption{
     padding-left: 7rem;
+}
+.TeamHeading h2{
+    font-family:'Times New Roman', Times, serif;
+    color: #bda18c;;
 }
 /*Service*/
 .Home-service{
