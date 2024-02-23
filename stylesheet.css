@@ -1,10 +1,8 @@
 @font-face {
-    font-family: 'Custom';
-    src: url('Font/riesling.ttf');
+  font-family: 'Custom';
+  src: url('Font/riesling.ttf');
 }
-*{
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 .w3-tag {
     background-color: #000;
     color: #fff;
