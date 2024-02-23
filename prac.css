@@ -512,7 +512,7 @@ section{
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 1rem;
+    
 }
 
 .services .box-container .box:hover{
