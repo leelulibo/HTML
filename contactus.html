@@ -55,78 +55,90 @@
                 margin-left: -8.1%;
             }
 
-            .body{
+ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8f755e;
-}
-.container{
+    background-color:  #998f86;
+ }
+.container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 80px;
+    padding: 20px;
 }
 
 h1{
     text-align: center;
 }
 
-.contact-form{
+.contact-form {
     background-color: #998f86;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rbba(0,0,0,0.1);
+   
+    text-align: center;
 }
-.form-group{
+.form-group {
     margin-bottom: 20px;
 }
 
-.form-group label{
+.form-group label {
     display:block;
     font-weight: bold;
     text-align: center;
     
 }
 
-.form-group input, .form-group textarea{
+.form-group input, .form-group textarea {
     width: 100px;
-    padding: 1rem;
+    padding: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px ;
 }
 
-.form-group textarea{
+.form-group textarea {
     height: 100px;
 }
 
-.form-group button{
+.form-group button {
     background-color:#bda18c;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px 15px;
     cursor: pointer;
 }
-.form-group button: hover{
+.form-group button:hover {
     background-color: #b4a79e;
 }
 
 iframe {
+
   /* Adjust the width and height as needed */
   width: 600px;
   height: 400px;
-
-  /* Remove the default border */
   border: none;
-
-  /* Optional styling */
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-  /* border-radius: 5px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  border-radius: 5px; 
 }
 
+.list{
+    text-align: right
+    justify-content: right;
+    padding-right: 600px;
+}
 
+.frame{
+
+text-align:left;
+
+}
+.par{
+    text-align: center;
+}
 
         ul {
             list-style-type: none; /* Removes bullets */
+            text-align: center;
         }
 
           /*footer*/
@@ -168,7 +180,7 @@ iframe {
                 text-align: center;
                margin-bottom: -5px;
                margin-top: -2px;
-               background-color: white;
+            
                background-size:cover ;
             }
 
@@ -204,31 +216,36 @@ iframe {
     <form action="#" method="post">
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" style="width: 800px;" required><br><br>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" style="width: 800px;"><br><br>
         </div>
 
         <div class="form-group">
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br><br>
+            <textarea id="message" name="message" style="width: 800px;" required></textarea><br><br>
         </div>
 
         <div class="form-group">
             <button type="submit">Submit</button>
         </div>
+</form>
+</div>
 
-    </form>
-
-<p> You can also reach us at:</p>
+<div class="par">
+    <p> You can also reach us at:</p>
+</div>
+<section class="list">
 <ul> 
-    <li>Phone: 066 240 2975 </li>
-    <li>Email: letsgetbraided07@gmail.com </li>
-    <li>Address: 97 Durham Avenue, Salt River, Cape Town </li>
+    <li>Phone: 066 240 2975 </li><br>
+    <li>Email: letsgetbraided07@gmail.com </li><br>
+    <li>Address: 97 Durham Avenue, <br>Salt River, Cape Town </li><br>
 </ul>
+</section>
 
+<div class="frame">
 <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.5469535495467!2d18.458252515675466!3d-33.92546758522859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5469454275e5%3A0xf54f5b5055a54154!2s97%20Durham%20Ave%2C%20Salt%20River%2C%20Cape%20Town%207925!5e0!3m2!1sen!2sza!4v1665411515751!5m2!1sen!2sza"
     width="600"
