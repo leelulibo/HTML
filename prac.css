@@ -517,6 +517,7 @@ section{
 
 .services .box-container .box:hover{
     background: #fff6f6;
+    background-size: auto;
 }
 
 .services .box-container .box i {
