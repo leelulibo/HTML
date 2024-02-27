@@ -1,4 +1,25 @@
 @import url(httos://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic, 500,700,700italic,980°);
+
+@media only screen and (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    .container {
+      width: 80%;
+    }
+  }
 :root{
     --main-color: #d7c7ae;
     --primary-color:
