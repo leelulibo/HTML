@@ -78,20 +78,17 @@ nav a{
 }
 
 /*welcome secton*/
-.Welcome-image{}
-   
- 
 .welcome-h{
     font-size: 8rem !important;
     color:#bda18c;
-    margin-top: -25rem;
     margin-left: 8rem;
     
 }
 
 .image-W{
-    text-align: center;
-    margin-top: -10%;
+    background-image: url(/pictures/home.png);
+    background-repeat: no-repeat;
+    text-align: center; 
     padding: 10px;
     padding-top: 100px;
     padding-right: 100px;
@@ -170,6 +167,34 @@ figcaption{
    display: inline-block;
 }
  
+.seemore{
+    
+   color: #2a201c;
+    text-align: center;
+    font-size: large;
+}
+
+.middle{
+    margin-top: -30%;
+    left: 50%;
+
+}
+
+  .image-Services {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .image-Services:hover  {
+    opacity: 0.3;
+  }
+
+  .image-Services:hover .middle {
+    opacity: 1;
+  }
+  
 
 /*Contacy Us Link*/
  
