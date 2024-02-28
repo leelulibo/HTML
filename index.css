@@ -170,6 +170,38 @@ figcaption{
    display: inline-block;
 }
  
+.seemore{
+    padding:16px 32px;
+    background-color: #2a201c;
+    text-align: center;
+    font-size: large;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .image-Services {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .container:hover .image-Services {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
 
 /*Contacy Us Link*/
  
