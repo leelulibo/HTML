@@ -100,7 +100,8 @@ nav a{
 }
 
 .w-text{
-    
+    color:white;
+   
 }
 
 .w3-tag {
@@ -119,7 +120,8 @@ nav a{
 .Aboutus-heading{
     text-align: center;
     text-transform: uppercase;
-
+    color: #2a201c;
+    font-size: 25px;
 }
  
 .aboutus-image{
@@ -155,14 +157,15 @@ figcaption{
 }
 .services-heading{
     text-align: center;
-    padding-top: 3rem;
+    padding-bottom: 2rem;
     text-transform: uppercase;
- 
+    font-size: 25px;
+    color: #2a201c;
 }
  
 .d-services{
     text-align: center;
-    padding-bottom: 2rem;
+    
 }
  
 .service-Images{
@@ -219,6 +222,8 @@ figcaption{
 .contactup-P{
     padding-top: 0.5rem !important; 
     text-align: center;
+    color: #000;
+    font-size: 15px;
     }
      
     .contactUs-b{
