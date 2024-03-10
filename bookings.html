@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="prac.css">
+  <script defer src="./booking.js"></script>
   
       
 </head>
@@ -42,16 +43,16 @@
 
         <div class="row">
     
-            <form action="">
+            <form id="form" action="">
                 <h3>Book your slot</h3>
                 <div class="inputBox">
-                    <input type="text" placeholder="Your name" required>
+                    <input type="text" id="name" placeholder="Your name">
                 </div>
                 <div class="inputBox">
-                    <input type="text" placeholder="Your Surname" required>
+                    <input type="text" id="surname" placeholder="Your Surname">
                 </div>
                 <div class="inputBox">
-                    <input type="email" placeholder="Your e-mail" required>
+                    <input type="email" placeholder="Your e-mail">
                 </div>
                 <div class="inputBox">
                     <input type="date" id="time" name="time" >
