@@ -7,7 +7,24 @@
   <link rel="stylesheet" href="prac.css">
   <script defer src="./booking.js"></script>
   
-      
+   <style>
+    .error {
+    color: red;
+    font-size: 0.15em;
+    margin-top: 5px;
+}
+
+.inputBox.error input {
+    border-color: #ff3860;
+}
+
+.inputBox.error .error {
+    color: #ff3860;
+    font-size: 10px;
+    height: 13px;
+}
+
+   </style>   
 </head>
 <body>
 <section >
@@ -42,46 +59,54 @@
     <h1 class="heading"> Book a slot </h1>
 
         <div class="row">
-    
             <form id="form" action="">
                 <h3>Book your slot</h3>
                 <div class="inputBox">
                     <input type="text" id="name" placeholder="Your name">
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
                     <input type="text" id="surname" placeholder="Your Surname">
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
-                    <input type="email" placeholder="Your e-mail">
+                    <input type="email" id="email" placeholder="Your e-mail">
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
-                    <input type="date" id="time" name="time" >
+                    <input type="date" id="date" name="date">
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
-                    <input type="time" id="time" name="time" >
+                    <input type="time" id="time" name="time">
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
-                    <select id="hair_length" name="hair_length" class="ubude">
+                    <select id="hair_length" name="hair_length" class="ubude" required>
+                        <option value="">Select Hair Length</option>
                         <option value="back">Back length</option>
                         <option value="bum">Bum length</option>
                         <option value="waist">Waist length</option>
                         <option value="tigh">Tigh length</option>
                         <option value="knee">Knee length</option>
                     </select>
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
-                    <select id="braid_type" name="braid_type" class="ubunjani">
+                    <select id="braid_type" name="braid_type" class="ubunjani" required>
+                        <option value="">Select Hair Type</option>
                         <option value="knotless">Knotless braids</option>
                         <option value="boho braids">Boho braids</option>
                         <option value="peekaboo braids">Peekaboo braids</option>
                         <option value="curly ends">Curly ends</option>
                     </select>
+                    <div class="error"></div>
                 </div>
                 <div class="inputBox">
                     <input type="text" placeholder="Message">
+                    <div class="error"></div>
                 </div>
-    
-    
+            
                 <input type="submit" value="Submit" class="btn">
             </form>
     

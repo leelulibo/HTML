@@ -1,19 +1,17 @@
 const form = document.getElementById('form');
-const Name = document.getElementById('name');
-const surname = document.getElementById('surname');
-const email = document.getElementById('email');
-const date = document.getElementById('date');
-const time = document.getElementById('time');
-const length = document.getElementById('ubude');
-const type = document.getElementById('ubunjani');
+const nameInput = document.getElementById('name');
+const surnameInput = document.getElementById('surname');
+const emailInput = document.getElementById('email');
+const dateInput = document.getElementById('date');
+const timeInput = document.getElementById('time');
 
-form.addEventListener('submit',  e =>{
+form.addEventListener('submit', e => {
     e.preventDefault();
     validateInput();
 });
 
-const setError =(Element, message) => {
-    const inputControl = Element.parentElement;
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
@@ -21,8 +19,8 @@ const setError =(Element, message) => {
     inputControl.classList.remove('success');
 }
 
-const setSuccess = Element => {
-    const inputControl = Element.parentElement;
+const setSuccess = element => {
+    const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = '';
@@ -35,42 +33,42 @@ const isValidEmail = email => {
     return re.test(String(email).toLowerCase());
 }
 
-const validateInput = () =>{
-    const nameValue = Name.value.trim();
-    const emailValue = email.value.trim();
-    const surnameValue = surname.value.trim();
-    const dateValue = date.value.trim();
-    const timeValue = time.value.trim();
+const validateInput = () => {
+    const nameValue = nameInput.value.trim();
+    const surnameValue = surnameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+    const dateValue = dateInput.value.trim();
+    const timeValue = timeInput.value.trim();
 
-    if(nameValue === ''){
-        setError(Name, 'Firstname is required');
+    if (nameValue === '') {
+        setError(nameInput, 'Firstname is required');
     } else {
-        setSuccess(Name);
+        setSuccess(nameInput);
     }
 
-    if (surnameValue === ''){
-        setError(surname, 'Lastname is required');
+    if (surnameValue === '') {
+        setError(surnameInput, 'Lastname is required');
     } else {
-        setSuccess(surname);
+        setSuccess(surnameInput);
     }
 
-    if (emailValue === ''){
-        setError(email, 'Email is required');
-    } else if (!isValidEmail(emailValue)){
-        setError(email, 'Provide a valid email address');
+    if (emailValue === '') {
+        setError(emailInput, 'Email is required');
+    } else if (!isValidEmail(emailValue)) {
+        setError(emailInput, 'Provide a valid email address');
     } else {
-        setSuccess(email);
+        setSuccess(emailInput);
     }
 
-    if (dateValue === ''){
-        setError(date, 'Input date');
+    if (dateValue === '') {
+        setError(dateInput, 'Date is required');
     } else {
-        setSuccess(date);
+        setSuccess(dateInput);
     }
 
-    if (timeValue === ''){
-        setError(time, 'Input time');
+    if (timeValue === '') {
+        setError(timeInput, 'Time is required');
     } else {
-        setSuccess(time);
+        setSuccess(timeInput);
     }
 }
