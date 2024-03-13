@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="prac.css">
+  <script src="services.js"></script>
       
 </head>
 <body>
@@ -21,7 +22,7 @@
                   <li><a class="active" href="services.html">Services</a></li>
                   <li><a href="AboutUs2.html">About Us</a></li>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html">Siba</a></li>
+                 
               </ul>
           </nav>
 
@@ -108,7 +109,7 @@
       <div class="box">
         <img src="pictures\small backview.jpeg" alt>
         <div class="content">
-          <h3>Small Knotless R470</h3>
+          <h3>Small  R470</h3>
         </div>
       </div>
 
@@ -121,7 +122,27 @@
 
     </div>
   </section>
+<section>
+  <h1 class="heading">Various Pricing Display</h1>
 
+  <label for="service-select" class="select">Select a Service:</label>
+  <select id="service-select" class="select">
+    <option value="small">Small Knotless</option>
+    <option value="peekaboo">Peekaboo</option>
+    <option value="boho">Boho S/M Knotless</option>
+  </select>
+
+  <div id="price-display" class="select">
+    <p>Pricing: <span id="price">R470</span></p>
+    <div class="image-container">
+      <img src="pictures/small 4.jpeg" alt="Service Image" class="service-image">
+      <img src="pictures/small backview.jpeg" alt="Service Image" class="service-image">
+      <img src="pictures/small mix.jpeg" alt="Service Image" class="service-image">
+    </div>
+  </div>
+
+  
+</section>
   <section class="pricing" id="pricing">
 
     <h1 class="heading">Pricing</h1>

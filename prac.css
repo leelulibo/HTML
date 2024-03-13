@@ -1160,7 +1160,7 @@ section{
  .services .box-container .box .content h3{
     text-align: center;
     font-size: 3rem;
-    color:var(--white);
+    color: #ff73f6;
     padding-top: 40rem;
     text-transform: capitalize;
  }

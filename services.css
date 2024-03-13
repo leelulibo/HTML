@@ -92,7 +92,7 @@ object-fit: cover;
 .services .box-container .box img{
 transform: scale(1.1);
 }
-.services .box-container .box:hover .content{
+.services .box-container  .content{
 align-items: center;
 justify-content: center;
 position: relative;
@@ -101,17 +101,18 @@ left: 0;
 z-index: 10;
 height: 80%;
 width: 100%;
-
+color: var(--primary-color);
 
 }
 .services .box-container .box .content h3{
 text-align: center;
 font-size: 3rem;
-color: var(--white);
+
 padding-top: 40rem;
 text-transform:capitalize ;  
+color: var(--primary-color);
 }
-.services .box-container .box:hover .content{
+.services .box-container .content{
 display: flex;
 }
    
@@ -643,4 +644,19 @@ font-family: Arial;
 #slider8:target ~ .imgContainer{
     left: -40%;
 }
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .service-image {
+    width: 300px;
+    height: auto;
+  }
+  .select{
+    
+    font-size: 18px;
+    color: var(--primary-color);
+  }
 
