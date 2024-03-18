@@ -458,12 +458,23 @@ font-family: Arial;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 2rem;
+    margin-left: 50px;
 }
 
-.visit .row .image{
+.visit .row .policy-container{
     -webkit-box-flex: 1;
         -ms-flex: 1 1 40rem;
             flex: 1 1 40rem;
+}
+.policy-container .policy-content{
+    font-size: 20px;
+    margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8e5431;
+}
+.note{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
 }
 
 .visit .row .image img{
@@ -659,4 +670,46 @@ font-family: Arial;
     font-size: 18px;
     color: var(--primary-color);
   }
-
+  @media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .navbar.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .navbar ul{
+        flex-direction: column;
+        
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+    .logo{
+        display: flex;
+        flex: 1;
+        align-items: ;
+    }
+}

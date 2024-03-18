@@ -23,7 +23,34 @@
     font-size: 10px;
     height: 13px;
 }
+.booking-form {
+      display: flex;
+    }
 
+    .booking-form .form-container {
+      flex: 1;
+      margin-right: 20px; /* Adjust as needed */
+    }
+
+    .booking-form .policy-container {
+      flex: 1;
+    }
+
+    /* Additional styles for policy section */
+    .policy-container {
+      overflow-y: auto; /* Enable scrolling for policy section */
+      padding: 0 20px; /* Adjust padding as needed */
+    }
+
+    /* Ensure the policy content does not overflow */
+    .policy-content {
+      max-height: 80vh; /* Adjust as needed */
+    }
+
+    /* Style for banking details */
+    .bank-details {
+      margin-top: 5px; /* Adjust spacing */
+    }
    </style>   
 </head>
 <body>
@@ -87,7 +114,7 @@
                         <option value="back">Back length</option>
                         <option value="bum">Bum length</option>
                         <option value="waist">Waist length</option>
-                        <option value="tigh">Tigh length</option>
+                        <option value="tigh">Thigh length</option>
                         <option value="knee">Knee length</option>
                     </select>
                     <div class="error"></div>
@@ -103,8 +130,22 @@
                     <div class="error"></div>
                 </div>
                 <div class="inputBox">
+                    <select id="hair_size" name="hair_size" class="ubungakanani" required>
+                        <option value="">Select Hair Size</option>
+                        <option value="small">Small</option>
+                        <option value="s/m">Small/Medium</option>
+                        <option value="m/l">Medium/Large</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <div class="error"></div>
+                </div>
+                <div class="inputBox">
                     <input type="text" placeholder="Message">
                     <div class="error"></div>
+                </div>
+                <div class="inputBox">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload POP" name="submit">
                 </div>
             
                 <input type="submit" value="Submit" class="btn">
@@ -113,9 +154,28 @@
             <div class="image">
                 <img src="images/contact.png" alt="">
             </div>
+            <div class="policy-container">
+                <div class="policy-content">
+                  <!-- Policy content goes here -->
+                  <h3  class="heading">Booking Policy</h3><br>
+                  <p>A deposit of <span class="w3-tag">R100 is required</span> to secure a booking. Submit a proof of payment on the file section on the form.
+                     Use the details delow to pay your deposit. Reference your name.<span class="w3-tag">No deposit,No booking!</span> </p><br>
+                  <!-- Banking details -->
+                  <div class="bank-details">
+                    <h3  class="heading">Banking Details</h3>
+                    <p>Account Name: S Sogayise</p>
+                    <p>Account Number: 1589779019</p>
+                    <p>Bank Name: Capitec Bank</p>
+                    <p>Phone number: 0658848314</p>
+                  </div><br>
+                  <div class="note" id="note">
+                    <!-- Note content will be dynamically added here -->
+                  </div>
+                </div>
+              </div>
             
         </div>
-
+       
 </section>
 <!--Footer-->
 <footer >
@@ -171,6 +231,40 @@
 </div>
 
 </footer> 
+<script>
+    // Function to update the note based on user's selection
+    function updateNote() {
+      let hairLength = document.getElementById("hair_length").value;
+      let braidType = document.getElementById("braid_type").value;
+      let hairSize = document.getElementById("hair_size").value;
+      let note = document.getElementById("note");
   
+      // Example note content based on selection
+      let noteContent = "";
+      if (hairLength === "back" && braidType === "knotless" && hairSize ==="small") {
+        noteContent = "You have chosen small back length  knotless braids. Note: You need 4 packs of one million.";
+      } else if (hairLength === "bum" && braidType === "boho braids" && hairSize ==="s/m") {
+        noteContent = "You have chosen Small/Medium bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 4 packs of one million";
+      } else if(hairLength === "thigh" && braidType === "knotless" && hairSize ==="s/m"){
+        noteContent = "You have chosen Small/Medium thigh length knotless braids. Note: You need 5 packs of one million.";
+      }else if(hairLength === "thigh" && braidType === "knotless" && hairSize==="large"){
+        noteContent = "You have chosen Large thigh length knotless braids. Note: You need 5 packs of one million.";
+      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize==="small"){
+        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 4 packs of one million";
+      }else if(hairLength === "thigh" && braidType === "boho braids" && hairSize==="small"){
+        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 3 packs of one million";
+      }else if(hairLength === "back" && braidType === "boho braids" && hairSize==="small"){
+        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 2 packs of one million";
+      }
+  
+      note.textContent = noteContent;
+    }
+  
+    // Call the function initially and whenever form values change
+    updateNote();
+    document.getElementById("hair_length").addEventListener("change", updateNote);
+    document.getElementById("braid_type").addEventListener("change", updateNote);
+    document.getElementById("hair_size").addEventListener("change", updateNote);
+  </script>
 </body>
 </html>
