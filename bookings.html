@@ -122,7 +122,7 @@
                 <div class="inputBox">
                     <select id="braid_type" name="braid_type" class="ubunjani" required>
                         <option value="">Select Hair Type</option>
-                        <option value="knotless">Knotless braids</option>
+                        <option value="knotless braids">Knotless braids</option>
                         <option value="boho braids">Boho braids</option>
                         <option value="peekaboo braids">Peekaboo braids</option>
                         <option value="curly ends">Curly ends</option>
@@ -233,64 +233,63 @@
 </footer> 
 <script>
     // Function to update the note based on user's selection
-    function updateNote() {
-      let hairLength = document.getElementById("hair_length").value;
-      let braidType = document.getElementById("braid_type").value;
-      let hairSize = document.getElementById("hair_size").value;
-      let note = document.getElementById("note");
-  
-      // Example note content based on selection
-      let noteContent = "";
-      if (hairLength === "back" && braidType === "knotless" && hairSize ==="small") {
-        noteContent = "You have chosen small back length  knotless braids. Note: You need 4 packs of one million.";
-      } else if (hairLength === "bum" && braidType === "boho braids" && hairSize ==="s/m") {
-        noteContent = "You have chosen Small/Medium bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 4 packs of one million";
-      } else if(hairLength === "thigh" && braidType === "knotless" && hairSize ==="s/m"){
-        noteContent = "You have chosen Small/Medium thigh length knotless braids. Note: You need 5 packs of one million.";
-      }else if(hairLength === "thigh" && braidType === "knotless" && hairSize==="large"){
-        noteContent = "You have chosen Large thigh length knotless braids. Note: You need 5 packs of one million.";
-      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize==="small"){
-        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 4 packs of one million";
-      }else if(hairLength === "thigh" && braidType === "boho braids" && hairSize==="small"){
-        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 3 packs of one million";
-      }else if(hairLength === "back" && braidType === "boho braids" && hairSize==="small"){
-        noteContent = "You have chosen Small bum length boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 2 packs of one million";
-      }else if(hairLength === "back" && braidType === "knotless" && hairSize ==="s/m"){
-        noteContent = "You have chosen  Small/Medium back length  knotless braids. Note: You need 4 packs of one million."
-      }else if(hairLength === "back" && braidType === "knotless" && hairSize ==="large"){
-        noteContent = "You have chosen  Large back length  knotless braids. Note: You need 3 packs of one million."
-      }else if(hairLength === "back" && braidType === "knotless" && hairSize ==="m/l"){
-        noteContent = "You have chosen  Medium/Large back length  knotless braids. Note: You need 3 packs of one million."
-      }else if(hairLength === "back" && braidType === "boho braids" && hairSize ==="s/m"){
-        noteContent = "You have chosen  Small/Medium back length  boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 3 packs of one million"
-      }else if(hairLength === "back" && braidType === "boho braids" && hairSize ==="large"){
-        noteContent = "You have chosen  Large back length  boho braids. Note: Bring 1 pack of Accahh curls(check extensions and accessories on services page)  and 3 packs of one million"
-      }else if(hairLength === "bum" && braidType === "knotless" && hairSize ==="small"){
-        noteContent = "You have chosen  Small bum length  knotless braids. Note: You need 3 packs of one million."
-      }else if(hairLength === "bum" && braidType === "knotless" && hairSize ==="s/m"){
-        noteContent = "You have chosen  Small/Medium bum length  knotless braids. Note: You need 4 packs of one million."
-      }else if(hairLength === "bum" && braidType === "knotless" && hairSize ==="m/l"){
-        noteContent = "You have chosen  Meduim/Large bum length  knotless braids. Note: You need 4 packs of one million."
-      }else if(hairLength === "bum" && braidType === "knotless" && hairSize ==="large"){
-        noteContent = "You have chosen  Large bum length  knotless braids. Note: You need 3 packs of one million."
-      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize ==="small"){
-        noteContent = "You have chosen  Small bum length  boho braids. Note: You need 3 packs of one million."
-      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize ==="s/m"){
-        noteContent = "You have chosen  Small/Medium bum length  boho braids. Note: You need 4 packs of one million."
-      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize ==="m/l"){
-        noteContent = "You have chosen  Meduim/Large bum length  boho braids. Note: You need 4 packs of one million."
-      }else if(hairLength === "bum" && braidType === "boho braids" && hairSize ==="large"){
-        noteContent = "You have chosen  Large bum length  boho braids. Note: You need 3 packs of one million."
-      }
-  
-      note.textContent = noteContent;
+    const noteContentMap = {};
+const hairLengthPackRequirements = {
+  "back": 3,
+  "bum": 4,
+  "waist": 4, 
+  "thigh": 5,
+  "knee": 5
+};
+
+// Define arrays for the other options
+const braidTypeOptions = ["knotless braids", "boho braids", "peekaboo braids", "curly ends"];
+const hairSizeOptions = ["small", "s/m", "m/l", "large"];
+
+
+// Generate combinations and assign note content
+Object.keys(hairLengthPackRequirements).forEach(hairLength => {
+  braidTypeOptions.forEach(braidType => {
+    hairSizeOptions.forEach(hairSize => {
+      const key = `${hairLength}_${braidType}_${hairSize}`;
+      let noteContent = `You have chosen ${hairSize}  ${braidType} ${hairLength} length . Note: You need ${hairLengthPackRequirements[hairLength]} packs of hair extensions.`;
+      noteContentMap[key] = noteContent;
+    });
+  });
+});
+
+// Function to update the note based on user's selection
+function updateNote() {
+  let hairLength = document.getElementById("hair_length").value;
+  let braidType = document.getElementById("braid_type").value;
+  let hairSize = document.getElementById("hair_size").value;
+  let note = document.getElementById("note");
+
+  // Generate a key to access the note content from the map
+  let key = `${hairLength}_${braidType}_${hairSize}`;
+
+  // Check if the key exists in the map
+  if (noteContentMap.hasOwnProperty(key)) {
+    // If the key exists, display the corresponding note content
+    note.textContent = noteContentMap[key];
+
+    // Check if the screen size is small
+    if (window.innerWidth <= 768) { // You can adjust the screen size threshold as needed
+      // If the screen is small, display the note as an alert
+      alert(noteContentMap[key]);
     }
-  
-    // Call the function initially and whenever form values change
-    updateNote();
-    document.getElementById("hair_length").addEventListener("change", updateNote);
-    document.getElementById("braid_type").addEventListener("change", updateNote);
-    document.getElementById("hair_size").addEventListener("change", updateNote);
+  } else {
+    // If the key does not exist in the map, display a default message
+    note.textContent = "Please select valid options.";
+  }
+}
+
+// Call the function initially and whenever form values change
+updateNote();
+document.getElementById("hair_length").addEventListener("change", updateNote);
+document.getElementById("braid_type").addEventListener("change", updateNote);
+document.getElementById("hair_size").addEventListener("change", updateNote);
+
   </script>
 </body>
 </html>
