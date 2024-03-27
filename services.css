@@ -445,7 +445,7 @@ font-family: Arial;
     background: var(--main-color);
 }
 .visit{
-    background: url('../images/visit.png');
+    /* background: url('../images/visit.png'); */
     background-size: cover;
     background-position: center;
 }
